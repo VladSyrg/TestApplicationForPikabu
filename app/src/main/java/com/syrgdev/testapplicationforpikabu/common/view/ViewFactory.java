@@ -35,8 +35,6 @@ public class ViewFactory {
             view = new PostViewImpl(mLayoutInflater, container);
         } else if (viewClass.isAssignableFrom(PostsItemView.class)) {
             view = new PostsItemViewImpl(mLayoutInflater, container);
-        } else if (viewClass.isAssignableFrom(SavedPostsView.class)) {
-            view = new SavedPostsViewImpl(mLayoutInflater, container);
         } else {
             throw new IllegalArgumentException("unsupported view class: " + viewClass);
         }
