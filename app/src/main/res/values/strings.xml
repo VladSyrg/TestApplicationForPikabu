@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestApplicationForPikabu</string>
+    <string name="title_posts">Посты</string>
+    <string name="title_favorites">Избранное</string>
+    <string name="title_post">Пост</string>
+    <string name="text_empty_list_of_posts">Пока здесь пусто.</string>
+    <string name="text_error_while_fetching">Произошла ошибка.</string>
+    <string name="save">Сохранить</string>
+    <string name="remove">Убрать из сохраненного</string>
+</resources>

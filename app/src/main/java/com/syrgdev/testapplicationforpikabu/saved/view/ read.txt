@@ -1,0 +1,1 @@
+SavedPostsFragment использует PostView в качестве своего View.

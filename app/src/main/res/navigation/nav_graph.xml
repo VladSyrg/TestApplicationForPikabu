@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/posts">
+
+    <fragment
+        android:id="@+id/posts"
+        android:name="com.syrgdev.testapplicationforpikabu.posts.presenter.PostsFragment"
+        android:label="@string/title_posts"
+        tools:layout="@layout/view_posts" >
+        <action
+            android:id="@+id/action_posts_to_post"
+            app:destination="@id/post" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saved"
+        android:name="com.syrgdev.testapplicationforpikabu.saved.presenter.SavedPostsFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/view_posts" >
+        <action
+            android:id="@+id/action_saved_to_post"
+            app:destination="@id/post" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/post"
+        android:name="com.syrgdev.testapplicationforpikabu.post.presenter.PostFragment"
+        android:label="@string/title_post"
+        tools:layout="@layout/view_post" />
+</navigation>
